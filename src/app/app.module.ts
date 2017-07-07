@@ -7,8 +7,8 @@ import {HttpModule} from "@angular/http";
 import {rootRouterConfig} from "./app.routes";
 import {AppComponent} from "./app.component";
 
+import {CollectionComponent} from './collection';
 import {ListComponent, ListItemComponent} from './list';
-
 
 import {ContactService, UtilService, FooterComponent, 
   HeaderComponent, PhonePipe, BtnClickDirective} from "./shared";
@@ -18,6 +18,7 @@ import {ContactService, UtilService, FooterComponent,
   declarations: [
     AppComponent,
     ListComponent, ListItemComponent,
+    CollectionComponent,
     HeaderComponent, FooterComponent,
     PhonePipe,
     BtnClickDirective

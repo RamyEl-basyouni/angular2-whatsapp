@@ -1,0 +1,10 @@
+<my-header title="Favourites"></my-header>
+<h3 *ngIf="coll_length == 0" class="no-collection">Unfavourite</h3>
+<ul class="my-collection">
+  <li *ngFor="let collection of collections">
+    <a [routerLink]="['/list', collection.id]">
+      <label>{{ collection.name }}</label><span>{{ collection.telNum | phone }}</span>
+    </a>
+  </li>
+</ul>
+<my-footer></my-footer>
