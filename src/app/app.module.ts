@@ -10,17 +10,20 @@ import {AppComponent} from "./app.component";
 import {ListComponent, ListItemComponent} from './list';
 
 
-import {ContactService, FooterComponent, 
-  HeaderComponent} from "./shared";
+import {ContactService, UtilService, FooterComponent, 
+  HeaderComponent, PhonePipe, BtnClickDirective} from "./shared";
 
 
 @NgModule({
   declarations: [
-    AppComponent,ListComponent, ListItemComponent,
+    AppComponent,
+    ListComponent, ListItemComponent,
     HeaderComponent, FooterComponent,
+    PhonePipe,
+    BtnClickDirective
   ],
   imports     : [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig)],
-  providers   : [ContactService],
+  providers   : [ContactService, UtilService],
   bootstrap   : [AppComponent]
 })
 export class AppModule {
