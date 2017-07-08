@@ -1,4 +1,4 @@
-<my-header title="all contacts" [isShowCreateButton]="true"></my-header>
+<my-header title="Whatsapp contacts" [isShowCreateButton]="true"></my-header>
 <ul class="list">
   <li *ngFor="let contact of contacts">
     <list-item [contact]="contact" (routerNavigate)="routerNavigate($event)"></list-item>

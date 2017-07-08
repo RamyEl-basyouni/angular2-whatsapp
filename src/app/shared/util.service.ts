@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class UtilService {
-	constructor() {
 
+	constructor() {
 	}
 
 	checkPhoneNum(str: string) {
@@ -13,5 +13,6 @@ export class UtilService {
 	checkEmail(str: string) {
 	  return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(str)
 	}
+
 
 }
